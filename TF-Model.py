@@ -40,13 +40,14 @@ def extract_features(file, preemphasis_coeff=0.97, n_mfcc=80, n_mels=128, fmin=0
 #all_directories = os.listdir(root_directory)  -- alternativa a random_directories per lavorare sull'intero corpus
 sample_size = 800
 all_directories = os.listdir(root_directory)
-random_directories = random.sample(os.listdir(root_directory), sample_size)
+
 #----------------------
 
 n_runs = (5)   #fissa numero di run, i cui risultati saranno successivamente riuniti in media
 
 for exp in range (n_runs):
 # Separare le directories (= sessioni di registrazione) per speaker (speaker ID = prime quattro cifre del nome della directory)
+    random_directories = random.sample(os.listdir(root_directory), sample_size)
     directory_dict = {}
     for directory in random_directories: # oppure all_directories
         four_digits = directory[:4]
