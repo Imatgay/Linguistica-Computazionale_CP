@@ -1,4 +1,4 @@
-#Modello costruito su Keras-TensorFlow per classificazione multiclass (ottimizzata per 7 classi, quelle presenti in Agender Corpus)
+#Modello costruito cin Keras-TensorFlow per classificazione multiclass (ottimizzata per 7 classi, quelle presenti in Agender Corpus)
 
 #importiamo tutto il necessario
 import os
@@ -23,7 +23,7 @@ from tensorflow.keras import regularizers
 # Fissiamo percorso per accedere al file SPEAEXT.tbl (in documentazione del corpus, contiene metadata su sessioni e parlanti), di seguito un esempio.
 # Per tutte le informazioni relative al corpus e a metadata, vd, README dell'Agender Corpus nella cartella della Clarin Documentation
 root_directory = r"your_path"
-tbl_file = r"your_path\SPEAEXT.TBL"
+tbl_file = r"your_TBL_path\SPEAEXT.TBL"
 
 # Definiamo un dizionario che mappa le classi a nuovi valori indicizzati a zero, per rendere le label processabili dall'algoritmo
 label_mapping = {'1':0, '2': 1, '3': 2, '4': 3, '5': 4, '6': 5, '7': 6}
