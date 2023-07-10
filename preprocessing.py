@@ -1,4 +1,4 @@
-#Script per convertire Agender corpus da .raw in .wav + noisereductione audio trimming
+#Script per convertire Agender corpus da .raw in .wav + noisereduction + silence trimming
 
 import os
 import wave
@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from scipy.io.wavfile import write
 from scipy.io import wavfile
 
-root_directory = r"your_directory" #cartella in cui ci sono le directories con le singole sessioni dell'Agender Corpus
+root_directory = r"your_Agender_directory" #cartella in cui ci sono le directories con le singole sessioni dell'Agender Corpus
 nfiles = 0
 # Impostare i parametri audio (ottimali per agender)
 sample_width = 2  
