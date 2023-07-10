@@ -6,7 +6,7 @@
 
 
   [ a questo punto in ogni subdirectory avremo tre copie dello stesso file: il .raw originale, il .wav semplice (convertito e non preprocessato, con stesso nome
-  del .raw, solo con estensione diversa), il .wav preprocessato (chiamato [nome]_simple_nosilences.wav). Osservare i nomi di questi file sarà fondamentale in fase
+  del .raw, solo con estensione diversa), il .wav preprocessato (chiamato [nome]_simple_nosilences.wav). Richiamare i nomi corretti di questi file è fondamentale in fase
   di classificazione]
 
   
