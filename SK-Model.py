@@ -1,5 +1,5 @@
-#Modello costruito su ScikitLearn per classificazione binaria gender (Agender Corpus)
-## TODO : snellire e semplificare la creazione di sets ed estrazion labs/feats sul modello di TF-model
+#Modello costruito con ScikitLearn per classificazione binaria gender (Agender Corpus)
+## TODO : snellire e semplificare la creazione di sets ed estrazione labs/feats sul modello di TF-model 
 #importiamo tutto il necessario
 
 import os
@@ -15,9 +15,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 # Fissiamo root_directory (dove sono tutte le directories del corpus, una per sessione di registrazion)
 # Fissiamo percorso per accedere al file SPEAEXT.tbl (in documentazione del corpus, contiene metadata su sessioni e parlanti), di seguito un esempio.
 # Per tutte le informazioni relative al corpus e a metadata, vd, README dell'Agender Corpus nella cartella della Clarin Documentation
-root_directory = r"your_path"
-root_directory = r"C:\Users\Matteo\AppData\Local\Programs\Python\Python39\Proj_Combei"
-tbl_file = r"C:\Users\Matteo\AppData\Local\Programs\Python\Python39\Proj_Combei2\CLARINDocumentation\TABLES\SPEAEXT.TBL"
+root_directory = r"your_corpus_path"
+tbl_file = r"your_TBL_path\CLARINDocumentation\TABLES\SPEAEXT.TBL"
 
 # Inizializziamo funzione per estrarre MFCCs da audio pre-enfatizzato
 def extract_features(file, preemphasis_coeff=0.97, n_mfcc=80, n_mels=128, fmin=0, fmax=None, window='hann'):
